@@ -1,8 +1,9 @@
-import { LitElement, html, css } from 'lit-element';
+import { ScopedRegistryHost  } from '@lit-labs/scoped-registry-mixin';
+import { LitElement, html, css } from 'lit';
 import { fireEvent } from 'custom-card-helpers';
 import localize from './localize';
 
-export class MeteoalarmCardEditor extends LitElement
+export class MeteoalarmCardEditor extends ScopedRegistryHost(LitElement)
 {
 	static get properties()
 	{

@@ -1,4 +1,5 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html } from 'lit';
+import { ScopedRegistryHost  } from '@lit-labs/scoped-registry-mixin';
 import { hasConfigOrEntityChanged, fireEvent } from 'custom-card-helpers';
 import './editor';
 import localize from './localize';
@@ -20,7 +21,7 @@ console.info(
   'color: white; background: #db4437; font-weight: 700;'
 );
 
-class MeteoalarmCard extends LitElement
+class MeteoalarmCard extends ScopedRegistryHost(LitElement)
 {
 
 	static get properties()

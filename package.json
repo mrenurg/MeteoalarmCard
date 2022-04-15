@@ -31,8 +31,9 @@
     "build": "npm run lint && npm run compile"
   },
   "dependencies": {
-    "custom-card-helpers": "^1.6.4",
-    "lit-element": "^2.3.1",
+    "@lit-labs/scoped-registry-mixin": "^1.0.0",
+    "custom-card-helpers": "^1.8.0",
+    "lit": "^2.2.2",
     "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {

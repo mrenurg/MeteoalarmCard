@@ -36,4 +36,13 @@ export default {
 		IS_DEV && serve(serverOptions),
 		!IS_DEV && terser(),
 	],
+	// https://stackoverflow.com/questions/43556940/rollup-js-and-this-keyword-is-equivalent-to-undefined
+	onwarn: function(warning)
+	{
+		if ( warning.code === 'THIS_IS_UNDEFINED' )
+		{
+			return;
+		}
+		console.warn( warning.message );
+	}
 };
