@@ -1,84 +1,84 @@
 {
   "$schema": "../schema/schema.json",
   "common": {
-    "name": "Meteoalarm Card",
-    "description": "Meteoalarm card warns you about current weather events.",
-    "warning": "Warning",
-    "expected": "Expected",
+    "name": "Meteoalarm kort",
+    "description": "Meteoalarm kortet advarer dig om aktuelle vejr hændelser.",
+    "warning": "Advarsel",
+    "expected": "Forventet",
     "unavailable": {
-      "long": "Integration is unavailable",
-      "short": "Unavailable"
+      "long": "Integration ikke tilgængelig",
+      "short": "Utilgængelig"
     }
   },
   "error": {
     "missing_entity": "Specifying entities is required!",
-    "invalid_integration": "This integration is not valid!",
+    "invalid_integration": "Denne integration er ikke gyldig!",
     "entity_invalid": {
-      "single": "Selected integration doesn't match selected entity.",
-      "multiple": "Selected integration doesn't match selected entities: {entity}."
+      "single": "Den valgte integration matcher ikke den valgte enhed.",
+      "multiple": "Den valgte integration matcher ikke de valgte enheder: {entity}."
     }
   },
   "editor": {
     "entity": "Entity",
     "integration": "Integration",
-    "required": "Required",
-    "recommended": "Recommended",
-    "override_headline": "Override headline provided by integration",
-    "hide_when_no_warning": "Hide when there are no warnings",
-    "hide_caption": "Hide caption",
-    "disable_swiper": "Disable alerts swiper",
+    "required": "Nødvendig",
+    "recommended": "Anbefalede",
+    "override_headline": "Tilsidesæt overskrift leveret af integration",
+    "hide_when_no_warning": "Skjul, når der ikke er nogen advarsler",
+    "hide_caption": "Skjul billedtekst",
+    "disable_swiper": "Deaktiver alarmswiper",
     "description": {
-      "start": "Selected integration creates multiple entities.",
-      "current_expected": "First one with the current events and the second one with future ones.",
+      "start": "Valgt integration skaber flere enheder.",
+      "current_expected": "Den første med de aktuelle begivenheder og den anden med fremtidige.",
       "slots": "The exact amount of them created is determined by it's configuration.",
       "separate_events": "Each event kind has a separate entity.",
       "warning_watch_statement": "There are 3 entities: warnings, watches and statements.",
       "end": "You should add all of them to make sure you don't miss any alerts."
     },
     "error": {
-      "expected_entity": "Expected warnings entity haven't been provided. Future event won't be shown.",
-      "too_many_entities": "More entities than expected haven't been provided. Expected {expected} entities, got {got} entities.",
-      "duplicate": "Found duplicates in entities list."
+      "expected_entity": "Forventede advarsler er ikke blevet leveret. Fremtidig begivenhed vil ikke blive vist.",
+      "too_many_entities": "Flere entities end forventet er ikke blevet leveret. Forventet {expected} entities, fik {got} entities.",
+      "duplicate": "Fundet dubletter i entities liste."
     }
   },
   "events": {
-    "no_warnings": "No warnings",
+    "no_warnings": "Ingen advarsler",
     "nuclear": "nuclear event",
-    "tornado": "tornado",
-    "hurricane": "hurricane",
+    "tornado": "skypumpe",
+    "hurricane": "Orkan",
     "wind": "wind",
-    "earthquake": "earthquake",
-    "volcano": "volcano",
-    "snow_ice": "snow/ice",
-    "fog": "fog",
-    "high_temperature": "high temperature",
-    "low_temperature": "low temperature",
+    "earthquake": "jordskælv",
+    "volcano": "vulkansk",
+    "snow_ice": "sne/is",
+    "fog": "tåge",
+    "high_temperature": "høj temperatur",
+    "low_temperature": "lav temperatur",
     "coastal_event": "coastal event",
     "tsunami": "tsunami",
     "sea_event": "sea event",
-    "forest_fire": "forest fire",
-    "avalanches": "avalanches",
-    "thunderstorms": "thunderstorms",
-    "rain": "rain",
-    "flooding": "flooding",
-    "air_quality": "air quality",
-    "dust": "dust"
+    "forest_fire": "skovbrand",
+    "avalanches": "laviner",
+    "thunderstorms": "torden vejr",
+    "rain": "regn",
+    "flooding": "oversvømmelse",
+    "air_quality": "luft kvalitet",
+    "dust": "støv"
   },
   "messages": {
     "yellow": {
-      "event": "Yellow {event} warning",
-      "generic": "Yellow warning",
-      "color": "Yellow"
+      "event": "Gul {event} advarsel",
+      "generic": "Gul advarsel",
+      "color": "Gul"
     },
     "orange": {
-      "event": "Orange {event} warning",
-      "generic": "Orange warning",
+      "event": "Orange {event} advarsel",
+      "generic": "Orange advarsel",
       "color": "Orange"
     },
     "red": {
-      "event": "Red {event} warning",
-      "generic": "Red warning",
-      "color": "Red"
+      "event": "Rød {event} advarsel",
+      "generic": "Rød advarsel",
+      "color": "Rød"
     }
   }
 }
